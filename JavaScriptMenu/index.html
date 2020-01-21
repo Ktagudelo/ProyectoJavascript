@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Frutas</title>
+    <script type="text/javascript" src="frutas.js"></script>
+    <style>
+      .container{
+        text-align: center;
+      }
+      #imgContenedor{
+         width: 100%
+      }
+      #imgContenedor img{
+        display: block;
+        margin: auto;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+    <h1>Seleccion de Frutas</h1>
+    
+    <label for="frutas" id="fruta">
+        <select name="frutas" id="selectFrutas">
+          <option value=”se”>Selecciona</option>
+          <option value="manzana" onclick="getImgFruta();">Manzana</option>
+          <option value="banano">Banano</option>
+          <option value="pera">Pera</option>
+          <option value="mango">Mango</option>
+        </select> 
+    </label><br>
+    <br><br><br>
+    <input type="button" onclick="getImgFruta();" value="Vamos a comer frutas">
+    <br><br><br><br>
+    <div id="imgContenedor"></div>
+  </div>
+  </body>
+</html>
